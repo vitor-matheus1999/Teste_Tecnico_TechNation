@@ -36,6 +36,28 @@ Realizando o "git clone" do projeto e seguindo para a pasta "views", será poss�
 
 
 
+## Funcionalidades
+
+O sidebar do site contém duas áreas:
+- Dashboard ;
+- Notas Emitidas.
+
+### Header na Área de Conteúdo
+O header presenta em cada página de conteúdo contém o nome da área em que o usuário está, juntamente com um exemplo da posição em que a foto de perfil do usuário seguido de seu nome.
+
+### Área Dashboard
+A área "Dashboard" tem por objetivo apresentar de forma sucinta as informações sobre os valores totais das notas fiscais e os gráficos de evolução.
+
+---
+
+Os cards que apresentam os valores totais apresentam um link clicavem que não apresenta nenhuma funcionalidade, sendo apresentado apenas como possibilidade de funcionalidade.
+
+
+### Área Notas Emitidas
+Já a área "Notas Emitidas" contém uma tabela apresentando os dados indivíduais de cada nota fiscal emitida. A tabela utiliza uma lista de objetos json estática de notas emitidas, por conta de não ser utilizado ajax para criação das tabelas.
+
+
+
 ## Apêndice
 
 A página criada não realiza nenhuma requisição utilizando ajax, porém a lógica para realizar a funcionalidade juntamente com o JQuery, está no código porém está comentada para que não houvesse conflitos.
