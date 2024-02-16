@@ -6,6 +6,8 @@
         <title>Teste Técnico</title>
         
         <link rel="stylesheet" href="../css/style_index.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../libs/fontawesome-free/css/all.min.css">
         <!-- DataTable Jquery -->
         <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
         <!-- Admin LTE -->
@@ -18,10 +20,12 @@
     <body>
        <div class="container-fluid">
             <div class="row flex-nowrap">
+                <!-- SideBar -->
                 <div class="bg-danger col-auto col-md-2 min-vh-100">
                     <div class="bg-danger p-2">
                         <a class="d-flex mb-3 mt-3 text-decoration-none align-items-center">
                             <span class="fs-4 d-none d-sm-inline">Teste Técnico</span>
+                            <i class="fas fa-pencil-alt ms-3 fa-2x"></i>
                         </a>
                         <ul class="nav nav-pills flex-column mt-4">
                             <li id="item_navbar" class="nav-item">       
@@ -38,7 +42,6 @@
                     </div>
                 </div>
                 
-                <!-- Conteúdo -->
                 <div class="p-0 col-auto col-md-10 min-vh-100">
                     <!-- Header Conteúdo Página  -->
                     <nav id="navbar" class="navbar navbar-default ">
@@ -51,13 +54,15 @@
                         </div>
                     </nav>
 
+                     <!-- Conteúdo da Página-->
                     <div class="container-fluid">
                         <div class="card col-10 m-auto mt-5">
                             <div class="card-header">
                                 <h3>Tabela de notas emitidas</h3>
                             </div>
                             <div class="card-body">
-                                <div class="d-inline-flex">
+                                <!-- Filtro para ser aplicado com ajax -->
+                                <!-- <div class="d-inline-flex">
 
                                     <select id="selectFiltro" class="form-select h-25 me-3 mb-3">
                                         <option selected>Filtro</option>
@@ -90,7 +95,7 @@
                                         <option value="3">Pagamento em atraso</option>
                                         <option value="4">Pagamento em realizado</option>
                                     </select>
-                                </div>
+                                </div> -->
                                 <div class="table-responsive">
                                     <table id="tb_notas_emitidas" class="table table-bordered table-hover ">
                                         <th></th>

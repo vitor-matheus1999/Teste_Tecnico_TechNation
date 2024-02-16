@@ -20,10 +20,12 @@
     <body>
        <div class="container-fluid">
             <div class="row flex-nowrap">
+                <!-- SideBar -->
                 <div class="bg-danger col-auto col-md-2 min-vh-100">
                     <div class="bg-danger p-2">
                         <a class="d-flex mb-3 mt-3 text-decoration-none align-items-center">
                             <span class="fs-4 d-none d-sm-inline">Teste Técnico</span>
+                            <i class="fas fa-pencil-alt ms-3 fa-2x"></i>
                         </a>
                         <ul class="nav nav-pills flex-column mt-4">
                             <li id="item_navbar" class=" nav-item">
@@ -40,8 +42,9 @@
                     </div>
                 </div>
                 
-                <!-- Conteúdo -->
+               
                 <div class="p-0 col-auto col-md-10 min-vh-100">
+
                     <!-- Header Conteúdo Página  -->
                     <nav id="navbar" class="navbar navbar-default ">
                         <div class="p-2 col-md-9">
@@ -53,65 +56,122 @@
                         </div>
                     </nav>
 
+                     <!-- Conteúdo da Página-->
                     <div class="container-fluid">
                         <!-- Cards de valores totais -->
                         <div class="row">
-                            <div class="card border-danger mt-4 ms-5 col-sm-3 col-md-3 col-xl-3">
+                            <div class="card border-danger h-25 mt-4 ms-5 col-sm-3 col-md-3 col-xl-3">
                                 <div class="card-body">
-                                    <div id="total_notas_emitidas" class="valor_card"></div>
-                                    <div class="titulo_card"><b>Total de notas emítidas</b></div> 
-                                    <i  id="iconCard" class=""></i>
+                                    <div class="d-inline-flex col-12 ">
+                                        <div class="col-8">
+                                            <div id="total_notas_emitidas" class="valor_card"></div>
+                                            <div class="titulo_card"><b>Total de notas emítidas</b></div> 
+                                        </div>
+                                        <div class="col-2">
+                                            <i class="fas fa-chart-bar fa-5x"></i>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-footer">
-                                    <h3>clique aqui</h3>
+                                    <a href="#" class="nav-link">
+                                        <div class="d-inline-flex">
+                                            <h3>clique aqui</h3>
+                                            <i class="fas fa-chevron-circle-right ms-3 mt-1 fa-2x"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
-                            <div class="card border-danger mt-4 ms-5 me-2 col-sm-3 col-md-4 col-xl-3">
+                            <div class="card border-danger h-25 mt-4 ms-5 me-2 col-sm-3 col-md-4 col-xl-3">
                                 <div class="card-body">
-                                    <div id="total_notas_sem_cobranca" class="valor_card"></div>
-                                    <div class="titulo_card"><b>Total de notas sem a cobrança feita</b></div>
-                                    <i  id="iconCard" class="fas fa-chart-bar fa-5x"></i>
+                                    <div class="d-inline-flex col-12 ">
+                                        <div class="col-8">
+                                            <div id="total_notas_sem_cobranca" class="valor_card"></div>
+                                            <div class="titulo_card"><b>Total de notas sem a cobrança feita</b></div>
+                                        </div>
+                                        <div class="col-2">
+                                            <i class="fas fa-chart-bar fa-5x"></i>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-footer">
-                                    <h3>clique aqui</h3>
+                                    <a href="#" class="nav-link">
+                                        <div class="d-inline-flex">
+                                            <h3>clique aqui</h3>
+                                            <i class="fas fa-chevron-circle-right ms-3 mt-1 fa-2x"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
-                            <div class="card border-danger mt-4  ms-5 me-2 col-sm-3 col-md-3 col-xl-3">
+                            <div class="card border-danger h-25 mt-4  ms-5 me-2 col-sm-3 col-md-3 col-xl-3">
                                 <div class="card-body">
-                                    <div id="total_notas_vencidas" class="valor_card"></div>
-                                    <div class="titulo_card"><b>Total de notas vencídas</b></div>
-                                    <i  id="iconCard" class="fas fa-chart-bar fa-5x"></i>
+                                    <div class="d-inline-flex col-12 ">
+                                        <div class="col-8">
+                                            <div id="total_notas_vencidas" class="valor_card"></div>
+                                            <div class="titulo_card"><b>Total de notas vencídas</b></div>
+                                        </div>
+                                        <div class="col-2">
+                                            <i class="fas fa-chart-bar fa-5x"></i>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-footer">
-                                    <h3>clique aqui</h3>
+                                    <a href="#" class="nav-link">
+                                        <div class="d-inline-flex">
+                                            <h3>clique aqui</h3>
+                                            <i class="fas fa-chevron-circle-right ms-3 mt-1 fa-2x"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
-                            <div class="card border-danger mt-4 ms-5 col-sm-3 col-md-3">
+                            <div class="card border-danger h-25 mt-4 ms-5 col-sm-3 col-md-3">
                                 <div class="card-body">
-                                    <div id="total_notas_irao_vencer" class="valor_card"></div>
-                                    <div class="titulo_card"><b>Total de notas a vencer</b></div>
-                                    <i  id="iconCard" class="fas fa-chart-bar fa-5x"></i>
+                                    <div class="d-inline-flex col-12 ">
+                                        <div class="col-8">
+                                            <div id="total_notas_irao_vencer" class="valor_card"></div>
+                                            <div class="titulo_card"><b>Total de notas a vencer</b></div> 
+                                        </div>
+                                        <div class="col-2">
+                                            <i class="fas fa-chart-bar fa-5x"></i>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-footer">
-                                    <h3>clique aqui</h3>
+                                    <a href="#" class="nav-link">
+                                        <div class="d-inline-flex">
+                                            <h3>clique aqui</h3>
+                                            <i class="fas fa-chevron-circle-right ms-3 mt-1 fa-2x"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
-                            <div class="card border-danger mt-4 ms-5 col-sm-3 col-md-3">
+                            <div class="card border-danger h-25 mt-4 ms-5 col-sm-3 col-md-3">
                                 <div class="card-body">
-                                    <div id="total_notas_pagas" class="valor_card"></div>
-                                    <div class="titulo_card"><b>Total de notas pagas</b></div>
-                                    <i  id="iconCard" class="fas fa-chart-bar fa-5x"></i>
+                                    <div class="d-inline-flex col-12 ">
+                                        <div class="col-8">
+                                            <div id="total_notas_pagas" class="valor_card"></div>
+                                            <div class="titulo_card"><b>Total de notas pagas</b></div>
+                                        </div>
+                                        <div class="col-2">
+                                            <i class="fas fa-chart-bar fa-5x"></i>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-footer">
-                                    <h3>clique aqui</h3>
+                                    <a href="#" class="nav-link">
+                                        <div class="d-inline-flex">
+                                            <h3>clique aqui</h3>
+                                            <i class="fas fa-chevron-circle-right ms-3 mt-1 fa-2x"></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Gráficos -->
                         <div class="row m-2 mt-5">
                             <div class="card p-0 m-auto col-md-8">
                                 <div class="card-header ">
